@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask AI Anything</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/style.css?v=2">
+    <link rel="stylesheet" href="/static/test.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ask AI Anything</h1>
+        </header>
+        <main id="chat-area">
+            <!-- Chat messages will appear here -->
+        </main>
+        <div class="controls">
+            <div class="streaming-control">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="streaming-toggle" checked>
+                    <span class="checkmark"></span>
+                    Enable streaming responses
+                </label>
+            </div>
+            <div class="clear-control">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="clear-history-toggle">
+                    <span class="checkmark"></span>
+                    Clear history on next request
+                </label>
+            </div>
+        </div>
+        <form id="chat-form" class="input-panel" autocomplete="off">
+            <input type="text" id="message-input" name="message" placeholder="Message..." required />
+            <button type="submit" id="send-btn" aria-label="Send">
+                <span class="arrow-up">&#8593;</span>
+            </button>
+        </form>
+    </div>
+    <script src="/static/chat.js"></script>
+</body>
+</html> 
