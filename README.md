@@ -103,3 +103,5 @@ Open your browser and go to: http://localhost:8000
 - Never commit your `.env` file to version control
 - Keep your API key secure and private
 - The `.gitignore` file is configured to exclude sensitive files 
+
+Update 15.07.2025
